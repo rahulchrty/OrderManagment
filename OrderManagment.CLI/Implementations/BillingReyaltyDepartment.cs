@@ -7,7 +7,7 @@ namespace OrderManagment.CLI.Implementations
     public class BillingReyaltyDepartment : IBillable
     {
         private IBillable _bill;
-        public string BillingItemType { get; private set; } = "book";
+        public string BillingItemType { get; set; } = "book";
         public BillingReyaltyDepartment(IBillable bill)
         {
             _bill = bill;
